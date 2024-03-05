@@ -7,13 +7,15 @@ Maintainer: Sneha Korlakunta <sneha@korlakunta.com>
 Description: Miscellaneous R functions that are useful
     to Sneha Korlakunta (and others). Primarily for 
     bioinformatics and computational use.
-License: GNU General Public License, version 3
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    dplyr
+    graphics,
+    Matrix
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    Seurat
 VignetteBuilder: knitr
 RoxygenNote: 7.3.1

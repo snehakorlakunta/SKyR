@@ -4,10 +4,21 @@
 \alias{pct_gene_cat}
 \title{pct_gene_cat}
 \usage{
-pct_gene_cat(gene_cat, pattern, max_pct, print_genes = FALSE)
+pct_gene_cat(
+  gene_cat,
+  dataset_name,
+  counts_file,
+  pattern,
+  max_pct,
+  print_genes = FALSE
+)
 }
 \arguments{
 \item{gene_cat}{String category for selected gene subset}
+
+\item{dataset_name}{Name of current dataset}
+
+\item{counts_file}{Unprocessed barcode-feature-matrix file}
 
 \item{pattern}{String for grep-ing genes}
 
