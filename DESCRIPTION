@@ -1,12 +1,13 @@
 Package: SKyR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Miscellaneous Bioinformatics Functions
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Sneha Korlakunta
+Maintainer: Sneha Korlakunta <sneha@korlakunta.com>
+Description: Miscellaneous R functions that are useful
+    to Sneha Korlakunta (and others). Primarily for 
+    bioinformatics and computational use.
+License: GNU General Public License, version 3
 Encoding: UTF-8
 LazyData: true
 Imports: 
