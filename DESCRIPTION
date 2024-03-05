@@ -1,7 +1,7 @@
 Package: SKyR
 Type: Package
 Title: Miscellaneous Bioinformatics Functions
-Version: 0.1.0
+Version: 0.1.1
 Author: Sneha Korlakunta
 Maintainer: Sneha Korlakunta <sneha@korlakunta.com>
 Description: Miscellaneous R functions that are useful
