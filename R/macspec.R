@@ -13,7 +13,7 @@
 #' @export
 macspec <- function(main, myeloid_sub, myeloid_compare, select_hu_mo="mou") {
   if (substr(SeuratObject::Version(myeloid_sub), 1, 1) == 5) {
-    expression_matrix <- Seurat::LayerData(object = myeloid_sub, layer = "data")
+    expression_matrix <- SeuratObject::LayerData(object = myeloid_sub, layer = "data")
     expression_matrix <- as.matrix(expression_matrix)
     myeloid_mat <- as(expression_matrix, "sparseMatrix")
   } else {
@@ -27,13 +27,13 @@ macspec <- function(main, myeloid_sub, myeloid_compare, select_hu_mo="mou") {
   myeloid_df <- myeloid_df %>% tibble::rownames_to_column(var="geneid")
 
   if (select_hu_mo == "mou") {
-    myeloid_df[, 1] <- AnnotationDbi::mapIds(org.Mm.eg.db,
+    myeloid_df[, 1] <- AnnotationDbi::mapIds(org.Mm.eg.db::org.Mm.eg.db,
                               keys = myeloid_df[, 1],
                               column = "ENSEMBL",
                               keytype = "SYMBOL",
                               multiVals = "first")
   } else {
-    myeloid_df[, 1] <- AnnotationDbi::mapIds(org.Hs.eg.db,
+    myeloid_df[, 1] <- AnnotationDbi::mapIds(org.Hs.eg.db::org.Hs.eg.db,
                               keys = myeloid_df[, 1],
                               column = "ENSEMBL",
                               keytype = "SYMBOL",
