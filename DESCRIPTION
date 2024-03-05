@@ -12,7 +12,6 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     AnnotationDbi,
-    data.table,
     dplyr,
     graphics,
     magrittr,
