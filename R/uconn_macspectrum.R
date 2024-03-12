@@ -1,6 +1,7 @@
 #' @title uconn_macspectrum
 #'
 #' @description Calculating MPI and AMDI of macrophage samples using MacSpectrum's algorithm.
+#'     Licensed under the Non-Commercial Use License [License_MacSpectrum.txt].
 #'
 #' @param mac_mtx A data.frame containing the gene expression levels of your dataset.
 #'     In the data.frame, rows are genes and columns are samples (e.g. individual single cells,
@@ -15,12 +16,31 @@
 #'     the mac_mtx (e.g., cell1, cell2, cell3, etc.; or sample1, sample2, sample3, etc.).
 #' @param select_hu_mo a string indicating if the samples are of human ("hum") or mouse ("mou"). default "mou"
 #'
-#' @references https://macspectrum.uconn.edu/
+#' @author The University of Connecticut
+#' @source https://macspectrum.uconn.edu/
+#' @references Chuan Li, Antoine Menoret, Cullen Farragher, Zhengqing Ouyang, Christopher Bonin, Paul
+#'     Holvoet, Anthony T. Vella, Beiyan Zhou. Single cell transcriptomics-based MacSpectrum reveals
+#'     novel macrophage activation signatures in diseases. JCI insight. April 16 2019. PMID: 30990466
 #'
 #' @return a data.frame containing sample names, features, MPI, and AMDI
 #'
 #' @keywords internal
 #' @export
+
+# Copyright 2019. The University of Connecticut. ALL RIGHTS RESERVED.
+# Licensed under the Non-Commercial Use License [License_MacSpectrum.txt].
+
+# You may not use this code/software except in compliance with the License. Specific language
+#     pertaining to permissions and limitations may be found in the License.
+
+# Please note that software used and/or distributed under the License is used and/or distributed on
+#     an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+# If you use MacSpectrum to analyze your experiments, please cite:
+#     Chuan Li, Antoine Menoret, Cullen Farragher, Zhengqing Ouyang, Christopher Bonin, Paul
+# Holvoet, Anthony T. Vella, Beiyan Zhou. Single cell transcriptomics-based MacSpectrum
+# reveals novel macrophage activation signatures in diseases. JCI insight. April 16 2019. PMID: 30990466
+
 uconn_macspectrum <- function(mac_mtx, feature, select_hu_mo="mou") { #select_hu_mo is either hum or mou
 
   #data("m.M1_mean")      #load(paste0(macspec_path, "data/m.M1_mean.rda"))

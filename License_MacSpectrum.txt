@@ -1,0 +1,36 @@
+UNIVERSITY OF CONNECTICUT
+NON-COMMERCIAL USE LICENSE
+
+Preamble
+
+The Non-Commercial Use License is intended for the non-commercial use of the source code
+only. For inquiries regarding commercial use and obtaining a commercial license, please contact
+University of Connecticut (UConn) Technology Transfer Services (TCS) by emailing Lindsay
+Sanford (lindsay.sanford@uconn.edu).
+
+TERMS AND CONDITIONS
+
+You may use, modify, distribute, and copy MacSpectrum (“Software”) for non-commercial
+purposes only. Non-commercial purposes include, teaching and research activities at educational
+and non-profit institutions as well as an individual’s personal not-for-profit use. To request a
+commercial license, please contact UConn TCS at the email address provided above.
+
+Modifications, copies, and derivative works of the Software will be subject to the same terms
+and conditions herein. You must include the copyright notice and disclaimer below in any
+distribution of the Software, including any copies, modifications, and derivative works of the
+Software, and you must provide a copy of this license to licensees.
+
+Copyright 2019. The University of Connecticut. ALL RIGHTS RESERVED.
+
+Any and all software, information, and materials are provided on an “as is” basis. UConn makes
+no warranties of any kind, either express or implied, as to any matter, and all such warranties,
+including warranties of merchantability and fitness for a particular purpose and lack of viruses,
+are expressly disclaimed. Without limiting the generality of the foregoing, UConn does not make
+any warranty of any kind relating to informational content, open source license compatibility,
+error-free operation, results to be obtained from use, freedom from patent, trademark and
+copyright infringement.
+
+In no event shall UConn, its trustees, directors, officers, employees and affiliates be liable for
+incidental or consequential damages of any kind, including economic damages or injury to
+property and lost profits, regardless of whether UConn shall be advised, shall have other reason
+to know, or in fact shall know of the possibility of the foregoing
