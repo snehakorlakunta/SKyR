@@ -3,6 +3,9 @@
 \name{uconn_macspectrum}
 \alias{uconn_macspectrum}
 \title{uconn_macspectrum}
+\source{
+https://macspectrum.uconn.edu/
+}
 \usage{
 uconn_macspectrum(mac_mtx, feature, select_hu_mo = "mou")
 }
@@ -27,8 +30,14 @@ a data.frame containing sample names, features, MPI, and AMDI
 }
 \description{
 Calculating MPI and AMDI of macrophage samples using MacSpectrum's algorithm.
+    Licensed under the Non-Commercial Use License [License_MacSpectrum.txt].
 }
 \references{
-https://macspectrum.uconn.edu/
+Chuan Li, Antoine Menoret, Cullen Farragher, Zhengqing Ouyang, Christopher Bonin, Paul
+    Holvoet, Anthony T. Vella, Beiyan Zhou. Single cell transcriptomics-based MacSpectrum reveals
+    novel macrophage activation signatures in diseases. JCI insight. April 16 2019. PMID: 30990466
+}
+\author{
+The University of Connecticut
 }
 \keyword{internal}
