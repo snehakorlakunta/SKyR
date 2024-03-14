@@ -5,6 +5,7 @@
 #' @importFrom AnnotationDbi mapIds
 #' @importFrom graphics abline
 #' @importFrom methods as
+#' @importFrom scCustomize Percent_Expressing
 #' @importFrom Seurat PercentageFeatureSet
 #' @importFrom SeuratObject LayerData
 #' @importFrom stats na.omit

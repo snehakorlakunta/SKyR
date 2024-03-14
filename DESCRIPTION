@@ -19,6 +19,7 @@ Imports:
     methods,
     org.Hs.eg.db,
     org.Mm.eg.db,
+    scCustomize,
     Seurat,
     SeuratObject,
     stats,
