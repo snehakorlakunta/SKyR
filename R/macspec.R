@@ -7,17 +7,19 @@
 #' @param myeloid_sub subset of 'main' containing only myeloid/macrophage cells
 #' @param myeloid_compare column of interest in Seurat object
 #' @param select_hu_mo a string indicating if the samples are of human ("hum") or mouse ("mou"). default "mou"
+#' @param v3_assay a string indicating which assay to retrieve from a Seurat v3/v4 object. default "SCT"
+#' @param v5_layer a string indicating which layer to retrieve from a Seurat v5 object. default "data"
 #'
 #' @return Seurat object 'main' with a new metadata column called 'CellType_macspec'
 #'
 #' @export
-macspec <- function(main, myeloid_sub, myeloid_compare, select_hu_mo="mou") {
+macspec <- function(main, myeloid_sub, myeloid_compare, select_hu_mo="mou", v3_assay = "SCT", v5_layer = "data") {
   if (substr(SeuratObject::Version(myeloid_sub), 1, 1) == 5) {
-    expression_matrix <- SeuratObject::LayerData(object = myeloid_sub, layer = "data")
+    expression_matrix <- SeuratObject::LayerData(object = myeloid_sub, layer = v5_layer)
     expression_matrix <- as.matrix(expression_matrix)
     myeloid_mat <- as(expression_matrix, "sparseMatrix")
   } else {
-    myeloid_mat <- myeloid_sub@assays$SCT@data  # Seurat v3
+    myeloid_mat <- myeloid_sub@assays[[v3_assay]]$data  # Seurat v3/4
   }
 
   rm(expression_matrix)
