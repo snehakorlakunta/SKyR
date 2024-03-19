@@ -4,7 +4,14 @@
 \alias{macspec}
 \title{macspec}
 \usage{
-macspec(main, myeloid_sub, myeloid_compare, select_hu_mo = "mou")
+macspec(
+  main,
+  myeloid_sub,
+  myeloid_compare,
+  select_hu_mo = "mou",
+  v3_assay = "SCT",
+  v5_layer = "data"
+)
 }
 \arguments{
 \item{main}{a Seurat object containing myeloid cells}
@@ -14,6 +21,10 @@ macspec(main, myeloid_sub, myeloid_compare, select_hu_mo = "mou")
 \item{myeloid_compare}{column of interest in Seurat object}
 
 \item{select_hu_mo}{a string indicating if the samples are of human ("hum") or mouse ("mou"). default "mou"}
+
+\item{v3_assay}{a string indicating which assay to retrieve from a Seurat v3/v4 object. default "SCT"}
+
+\item{v5_layer}{a string indicating which layer to retrieve from a Seurat v5 object. default "data"}
 }
 \value{
 Seurat object 'main' with a new metadata column called 'CellType_macspec'
