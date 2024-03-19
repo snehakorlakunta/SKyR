@@ -4,7 +4,7 @@
 #'     to evaluate how well the cells fit their assigned cluster.
 #'
 #' @param seurat_object A Seurat object
-#' @param cluster_col the metadata column indicating the clusters to assess
+#' @param cluster the metadata column indicating the clusters to assess
 #' @param dims A sequence of numbers indicating the number of dimensions (default is 1:30)
 #' @param slot A dimensional reduction present in the Seurat object (default is "pca")
 #'
@@ -12,7 +12,7 @@
 #'
 #' @export
 #'
-check_clustering <- function(seurat_object, cluster_col, dims = 1:30, slot = "pca") {
+check_clustering <- function(seurat_object, clusters, dims = 1:30, slot = "pca") {
 
   #https://github.com/satijalab/seurat/issues/1985
 
