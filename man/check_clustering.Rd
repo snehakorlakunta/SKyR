@@ -4,19 +4,14 @@
 \alias{check_clustering}
 \title{check_clustering}
 \usage{
-check_clustering(
-  seurat_object,
-  dims = 1:30,
-  cluster_col = "harmony_clusters",
-  slot = "pca"
-)
+check_clustering(seurat_object, cluster_col, dims = 1:30, slot = "pca")
 }
 \arguments{
 \item{seurat_object}{A Seurat object}
 
-\item{dims}{A sequence of numbers indicating the number of dimensions (default is 1:30)}
+\item{cluster_col}{the metadata column indicating the clusters to assess}
 
-\item{cluster_col}{the metadata column indicating the clusters to assess (default is "harmony_clusters")}
+\item{dims}{A sequence of numbers indicating the number of dimensions (default is 1:30)}
 
 \item{slot}{A dimensional reduction present in the Seurat object (default is "pca")}
 }
