@@ -7,7 +7,7 @@
 calc_PCs_estimate(seurat_object, slot = "pca")
 }
 \arguments{
-\item{seurat_object}{A seurat object}
+\item{seurat_object}{A Seurat object}
 
 \item{slot}{A dimensional reduction present in the seurat object}
 }
