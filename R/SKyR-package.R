@@ -3,6 +3,7 @@
 
 ## usethis namespace: start
 #' @importFrom AnnotationDbi mapIds
+#' @importFrom cluster silhouette
 #' @importFrom graphics abline
 #' @importFrom methods as
 #' @importFrom scCustomize Percent_Expressing

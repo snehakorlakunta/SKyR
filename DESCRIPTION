@@ -13,6 +13,7 @@ LazyData: true
 Imports: 
     AnnotationDbi,
     biomaRt,
+    cluster,
     dplyr,
     graphics,
     magrittr,
@@ -20,6 +21,7 @@ Imports:
     methods,
     org.Hs.eg.db,
     org.Mm.eg.db,
+    RColorBrewer,
     scCustomize,
     Seurat,
     SeuratObject,
