@@ -12,6 +12,8 @@
 #'
 #' @export
 threshold_cells <- function(title, values, min_per_cell, max_per_cell) {
+  # INCORPORATE DRAGGABLE LINES: https://stackoverflow.com/questions/49731381/movable-lines-in-plotly-r
+
   #counts per cell = nCount_RNA || genes per cell = nFeature_RNA
   plot(sort(values), xlab='cell', log='y', main=paste(title, "(ordered)"))
   abline(h=min_per_cell, col='magenta')  # lower threshold

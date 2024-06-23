@@ -4,7 +4,7 @@
 #'     to evaluate how well the cells fit their assigned cluster.
 #'
 #' @param seurat_object A Seurat object
-#' @param cluster the metadata column indicating the clusters to assess
+#' @param clusters the metadata column indicating the clusters to assess
 #' @param dims A sequence of numbers indicating the number of dimensions (default is 1:30)
 #' @param slot A dimensional reduction present in the Seurat object (default is "pca")
 #'
@@ -20,7 +20,7 @@ check_clustering <- function(seurat_object, clusters, dims = 1:30, slot = "pca")
   sil <- cluster::silhouette(x = as.numeric(x = as.factor(x = clusters)), dist = dist.matrix)
   seurat_object$sil <- sil[, 3]
 
-  p1 <- Seurat::FeaturePlot(seurat_object, "sil") + labs(title = paste0(harmonized_seurat@project.name, ": Silhouette Score")) +
+  p1 <- Seurat::FeaturePlot(seurat_object, "sil") + ggplot2::labs(title = paste0(seurat_object@project.name, ": Silhouette Score")) +
     ggplot2::scale_colour_gradientn(colours = rev(RColorBrewer::brewer.pal(n = 11, name = "RdBu")))
 
   return(p1)

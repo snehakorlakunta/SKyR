@@ -14,6 +14,7 @@ Imports:
     AnnotationDbi,
     biomaRt,
     cluster,
+    data.table,
     dplyr,
     ggplot2,
     graphics,
@@ -27,7 +28,8 @@ Imports:
     Seurat,
     SeuratObject,
     stats,
-    tibble
+    tibble,
+    utils
 Suggests: 
     knitr,
     rmarkdown

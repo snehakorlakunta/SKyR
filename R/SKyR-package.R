@@ -11,5 +11,7 @@
 #' @importFrom SeuratObject LayerData
 #' @importFrom stats na.omit
 #' @importFrom tibble rownames_to_column
+#' @importFrom utils menu
+#' @importFrom utils writeClipboard
 ## usethis namespace: end
 NULL
