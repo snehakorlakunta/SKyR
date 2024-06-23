@@ -21,7 +21,7 @@ remove_cells <- function(seurat_object) {
     else if (select_subcluster == length(subclusters) + 1) {
       print("Select multiple subtypes, separated by spaces. Input `enter` twice to complete operation.")
       all_subtypes <- scan()
-      print("Selected subtypes:", subclusters[all_subtypes])
+      print(subclusters[all_subtypes])
     }
     else {
       all_subtypes <- as.integer(select_subcluster)
