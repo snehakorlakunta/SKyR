@@ -28,7 +28,7 @@ remove_cells <- function(seurat_object) {
     }
 
     if (select1 == 3) {whole_object <- seurat_object}
-    seurat_object <- subset(seurat_object, CellType %in% subclusters[all_subtypes])
+    seurat_object <- subset(seurat_object, CellType %in% c(subclusters[all_subtypes]))
   }
 
   cells_to_remove <- select_cells(seurat_object)
