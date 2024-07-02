@@ -2,4 +2,9 @@ utils::globalVariables(c("nFeature_RNA", "nFeature_RNA",
                          "nCount_RNA", "nCount_RNA",
                          "percent_mito", "percent_ribo",
                          "org.Hs.eg.db", "org.Mm.eg.db", "macrophage",
-                         "CellType"))
+                         "CellType",
+                         "Avg.SC", "Gene", "Grp", "MinMax", "Pct.SC", "Split", "aes", "coord_flip", "dt_data",
+                         "dt_data_split", "element_blank", "element_rect", "element_text", "geom_point",
+                         "ggplot", "guide_colorbar", "guide_legend", "guides", "labs", "scale_color_gradient",
+                         "scale_size_continuous", "scale_x_discrete", "scale_y_discrete", "str_to_title",
+                         "theme", "unit", "word"))
