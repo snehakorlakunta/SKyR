@@ -27,7 +27,8 @@ get_dtplt_data(
 \item{scale_100}{Scale the percentage data to 0-100}
 }
 \value{
-A Seurat object with selected cells removed.
+A table with Gene, Group (Grp), Split (if applied), Average, scaled Average,
+        Percentage, and scaled Percentage values.
 }
 \description{
 Retrieves data from Seurat object for plotting multi-feature dot plots.
